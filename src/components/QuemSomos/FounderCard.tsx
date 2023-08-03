@@ -1,5 +1,5 @@
 import { IFounderCard } from "@/app/quemsomos/founders";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 
 export default function FounderCard({ founderInfo }: IFounderCard) {

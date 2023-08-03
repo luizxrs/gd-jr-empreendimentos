@@ -28,8 +28,8 @@ export default function Header() {
     <>
       <div
         className={twMerge(
-          "absolute top-0 bottom-0 h-screen w-screen left-0 right-0 bg-Primary-300/95 z-[99] transition-all duration-[10ms]",
-          openBurger ? "scale-100" : "scale-0"
+          "absolute top-0 bottom-0 h-screen w-screen left-0 right-0 bg-Primary-300/95 z-[99] overflow-hidden transition-all duration-[100ms]",
+          openBurger ? "scale-100 fixed" : "scale-0"
         )}
       >
         <div
@@ -39,7 +39,7 @@ export default function Header() {
           <GrFormClose size="3rem" />
         </div>
         <nav className="flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute">
-          <ul className="flex justify-between items-center gap-4 flex-col font-bold text-2xl text-white/80">
+          <ul className="flex justify-between items-center gap-4 flex-col font-bold text-2xl text-center text-white/80">
             <a href="/" className="hover:text-white">
               INÍCIO
             </a>

@@ -23,6 +23,14 @@ module.exports = {
           from: { transform: "translateX(calc(-36rem * 4))" },
           to: { transform: "0" },
         },
+        slideUp: {
+          from: { transform: "translateY(0%)" },
+          to: { transform: "translateY(-50%)" },
+        },
+        slideDown: {
+          from: { transform: "translateY(-50%)"},
+          to: {  transform: "translateY(0)" },
+        },
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
@@ -31,6 +39,8 @@ module.exports = {
       animation: {
         slideRight: "slideRight 60s infinite linear",
         slideLeft: "slideLeft 60s infinite linear",
+        slideUp: "slideUp 60s infinite linear",
+        slideDown: "slideDown 60s infinite linear",
         fadeIn: "fadeIn 2s ease-in forwards",
       },
       backgroundImage: {

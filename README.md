@@ -2,7 +2,6 @@
 
 Esse projeto foi criado como um teste para a empresa Inover Tecnologia em 7 dias.
 
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.digitaland.tv%2Fblog%2Fhtml5-banner-developer-8-questions-you-should-ask-before-hiring%2F&psig=AOvVaw0Gk2cDEQSBY_IYdILRhUSn&ust=1691270655959000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMj1oIrDw4ADFQAAAAAdAAAAABAE)
 
 ## 🚀 Projeto criado com as seguintes tecnologias:
 
@@ -16,7 +15,7 @@ Esse projeto foi criado como um teste para a empresa Inover Tecnologia em 7 dias
 - ✔️ Uso da função map
 - ✔️ Hospedagem Web na Vercel
 - ✔️ Carrosel
-- ✔️ [DEMO LIVE](https://code.visualstudio.com/download);
+- ✔️ [DEMO LIVE](https://gd-jr-empreendimentos-luizxrs.vercel.app/);
 
 ## ⚙ Pré Requisitos
 

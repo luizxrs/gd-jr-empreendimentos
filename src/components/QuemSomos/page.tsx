@@ -56,7 +56,7 @@ export default function QuemSomosPage() {
               <TextSlideBar direction={"left"} />
               <TextSlideBar direction={"right"} />
             </div>
-            <div className="w-full h-[1800px] md:h-[900px] pt-48 px-12 relative">
+            <div className="w-full h-[1100px] md:h-[900px] pt-48 px-4 md:px-12 relative">
               <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-x-24 px-12 relative">
                 <OutlineTitle>FOUNDERS</OutlineTitle>
                 <div className="absolute top-10 bottom-0 right-0 left-0 bg-Primary-300"></div>
@@ -92,13 +92,13 @@ export default function QuemSomosPage() {
                     <motion.div
                       drag="x"
                       dragConstraints={{ right: 0, left: dragLeftConstraint }}
-                      className="h-full max-w-full grid grid-flow-col gap-x-20 px-6 relative"
+                      className="h-full max-w-full grid grid-flow-col gap-x-4 md:gap-x-20 px-6 relative"
                     >
                       {/* //CARROUESEL */}
                       {members.map((member) => {
                         return (
                           <>
-                            <motion.div className="w-[25vw] h-[40vw] relative group">
+                            <motion.div className="w-[60vw] h-[90vw] md:w-[25vw] md:h-[40vw] relative group">
                               <motion.div className="absolute inset-0 bottom-10 bg-zinc-900/30 z-10 group-hover:opacity-0 transition-opacity duration-700"></motion.div>
                               <motion.div className="absolute top-0 bottom-10 right-0 left-0">
                                 <motion.div className="absolute top-0 bottom-0 right-0 left-0 overflow-hidden">

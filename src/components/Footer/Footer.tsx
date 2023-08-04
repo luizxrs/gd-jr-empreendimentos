@@ -9,12 +9,17 @@ export default function FooterComponent() {
         <Footer.SocialWindow />
         <div className="w-screen h-full bg-white text-black">
           <div className="bg-white h-full w-full px-16 py-8 flex flex-col justify-between item">
-            <div className="flex items-top justify-start gap-12 px-12 pr-12 py-16">
+            <div 
+            className="flex flex-wrap items-top justify-start gap-12 md:px-12 pr-12 py-16 flex-col w-[90vw] md:flex-row"
+            >
               <div>
                 <Footer.NavBarTitle>EMPREENDIMENTOS</Footer.NavBarTitle>
                 <Footer.ItemsWrapper>
-                  <a href="/sunbeachresidence" className="cursor-pointer motion-safe:animate-fadeIn">
-                    Sun Beach Residence
+                  <a
+                    href="/sunbeachresidence"
+                    className="cursor-pointer motion-safe:animate-fadeIn"
+                  >
+                    Sun Beach Residence 
                   </a>
                   <a href="/sunbeachresidence" className="cursor-pointer">
                     Gran Palace Residence

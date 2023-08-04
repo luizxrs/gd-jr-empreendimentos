@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   if (typeof window !== "undefined") {
-    return window.addEventListener("scroll", setFixed);
+    window.addEventListener("scroll", setFixed);
   }
 
   return (

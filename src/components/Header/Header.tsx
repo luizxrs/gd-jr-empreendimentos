@@ -27,12 +27,9 @@ export default function Header() {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", setFixed);
-    return () => {
-      window.removeEventListener("scroll", setFixed);
-    };
-  }, []);
+  if (typeof window !== "undefined") {
+    return window.addEventListener("scroll", setFixed);
+  }
 
   return (
     <>

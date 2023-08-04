@@ -15,7 +15,7 @@ Esse projeto foi criado como um teste para a empresa Inover Tecnologia em 7 dias
 - ✔️ Uso da função map
 - ✔️ Hospedagem Web na Vercel
 - ✔️ Carrosel
-- ✔️ [DEMO LIVE](https://code.visualstudio.com/download);
+- ✔️ [DEMO LIVE](https://gd-jr-empreendimentos-luizxrs.vercel.app/);
 
 ## ⚙ Pré Requisitos
 

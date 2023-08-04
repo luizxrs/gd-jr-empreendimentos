@@ -27,8 +27,8 @@ export default function EmpreendimentosPage() {
           <div className=" max-w-screen-xl m-auto">
             <SectionTitle text="Pré Lançamento" />
 
-            <div className="w-full pt-48 mb-24 relative">
-              <div className="w-[90vw] h-full">
+            <div className="w-full relative">
+              <div className="w-[90vw] mx-auto h-full">
                 <motion.div
                   ref={carousel}
                   className="h-full w-full overflow-hidden cursor-grab mx-auto"
@@ -41,13 +41,11 @@ export default function EmpreendimentosPage() {
                     {/* //CARROUESEL */}
                     {buildingCards.map((buildingCard, index) => (
                       <>
-                        <motion.div className="w-[40vw] h-[45vw] relative group">
-                          {buildingCards.map((buildingCard, index) => (
-                            <BuildingCard
-                              buildingInfo={buildingCard.buildingInfo}
-                              key={index}
-                            />
-                          ))}
+                        <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
+                          <BuildingCard
+                            buildingInfo={buildingCard.buildingInfo}
+                            key={index}
+                          />
                         </motion.div>
                       </>
                     ))}
@@ -55,34 +53,44 @@ export default function EmpreendimentosPage() {
                 </motion.div>
               </div>
             </div>
-
-            <div className=" w-full h-[600px] gap-20 grid grid-cols-2">
-              {buildingCards.map((buildingCard, index) => (
-                <BuildingCard
-                  buildingInfo={buildingCard.buildingInfo}
-                  key={index}
-                />
-              ))}
-            </div>
           </div>
         </section>
         <section className="w-screen mb-24">
           <div className=" max-w-screen-xl m-auto">
             <SectionTitle text="EM CONSTRUÇÃO" />
-            <div className=" w-full h-[600px] gap-20 grid grid-cols-2">
-              {buildingCards.map((buildingCard, index) => (
-                <BuildingCard
-                  buildingInfo={buildingCard.buildingInfo}
-                  key={index}
-                />
-              ))}
+
+            <div className="w-full relative">
+              <div className="w-[90vw] mx-auto h-full">
+                <motion.div
+                  ref={carousel}
+                  className="h-full w-full overflow-hidden cursor-grab mx-auto"
+                >
+                  <motion.div
+                    drag="x"
+                    dragConstraints={{ right: 0, left: dragLeftConstraint }}
+                    className="h-full max-w-full grid grid-flow-col gap-x-20 px-6 relative"
+                  >
+                    {/* //CARROUESEL */}
+                    {buildingCards.map((buildingCard, index) => (
+                      <>
+                        <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
+                          <BuildingCard
+                            buildingInfo={buildingCard.buildingInfo}
+                            key={index}
+                          />
+                        </motion.div>
+                      </>
+                    ))}
+                  </motion.div>
+                </motion.div>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="w-screen m-auto overflow-hidden relative">
           <div className="py-56 flex justify-around items-center flex-col gap-4">
-            <h2 className="text-5xl font-bold">
+            <h2 className="text-lg md:text-5xl text-center font-bold w-[90vw]">
               CONHEÇA NOSSAS{" "}
               <span className="text-Primary-100">OBRAS ENTREGUES</span>
             </h2>
@@ -103,9 +111,9 @@ export default function EmpreendimentosPage() {
         </section>
 
         <section className="w-screen m-auto overflow-hidden">
-          <div className="px-32 py-20 flex justify-around items-center gap-4 bg-Primary-300">
-            <div className="flex justify-between items-center gap-20 w-full">
-              <h2 className="text-5xl font-bold">
+          <div className="px-4 md:px-32 py-20 flex justify-around items-center gap-4 bg-Primary-300">
+            <div className="flex justify-between items-center gap-20 w-full md:flex-row flex-col">
+              <h2 className="text-3xl text-center md:text-left md:text-5xl font-bold">
                 CADASTRE-SE E <br /> RECEBA NOVIDADES
               </h2>
               <div className="">

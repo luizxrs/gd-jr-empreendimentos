@@ -24,7 +24,7 @@ export default function EmpreendimentosPage() {
     <>
       <div className="pt-24 flex flex-col justify-center items-center w-screen bg-backgroundColor-100">
         <section className=" w-screen">
-          <div className=" max-w-screen-xl m-auto">
+          <div className=" max-w-screen-2xl m-auto">
             <SectionTitle text="Pré Lançamento" />
 
             <div className="w-full relative">
@@ -41,7 +41,7 @@ export default function EmpreendimentosPage() {
                     {/* //CARROUESEL */}
                     {buildingCards.map((buildingCard, index) => (
                       <>
-                        <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
+                        <motion.div className="w-64 md:w-[30vw] h-[28rem] md:h-[35vw] relative group">
                           <BuildingCard
                             buildingInfo={buildingCard.buildingInfo}
                             key={index}
@@ -56,7 +56,7 @@ export default function EmpreendimentosPage() {
           </div>
         </section>
         <section className="w-screen mb-24">
-          <div className=" max-w-screen-xl m-auto">
+          <div className=" max-w-screen-2xl m-auto">
             <SectionTitle text="EM CONSTRUÇÃO" />
 
             <div className="w-full relative">
@@ -73,7 +73,7 @@ export default function EmpreendimentosPage() {
                     {/* //CARROUESEL */}
                     {buildingCards.map((buildingCard, index) => (
                       <>
-                        <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
+                        <motion.div className="w-64 md:w-[30vw] h-[28rem] md:h-[35vw] relative group">
                           <BuildingCard
                             buildingInfo={buildingCard.buildingInfo}
                             key={index}

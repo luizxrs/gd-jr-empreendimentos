@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 import { BsFacebook, BsYoutube } from "react-icons/bs";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [fix, setFix] = useState(false);
@@ -47,42 +48,42 @@ export default function Header() {
         </div>
         <nav className="flex justify-center items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute">
           <ul className="flex justify-between items-center gap-4 flex-col font-bold text-base text-center text-white/80 md:text-2xl">
-            <a href="/" className="hover:text-white">
+            <Link  href="/" className="hover:text-white">
               INÍCIO
-            </a>
-            <a href="/empreendimentos" className="hover:text-white">
+            </Link>
+            <Link  href="/empreendimentos" className="hover:text-white">
               EMPREENDIMENTOS
-            </a>
+            </Link>
 
-            <a href="/" className="font-light mt-4 hover:text-white">
+            <Link  href="/" className="font-light mt-4 hover:text-white">
               GRAN PALACE
-            </a>
-            <a href="/" className="font-light hover:text-white">
+            </Link>
+            <Link  href="/" className="font-light hover:text-white">
               SUN BEACH RESIDENCE
-            </a>
-            <a href="/" className="font-light hover:text-white">
+            </Link>
+            <Link  href="/" className="font-light hover:text-white">
               BELLE MAISON
-            </a>
-            <a href="/" className="font-light hover:text-white mb-4">
+            </Link>
+            <Link  href="/" className="font-light hover:text-white mb-4">
               BEAU LAC RESIDENCE
-            </a>
+            </Link>
 
-            <a href="/quemsomos" className="hover:text-white">
+            <Link  href="/quemsomos" className="hover:text-white">
               SOBRE NÓS
-            </a>
-            <a href="/" className="hover:text-white">
+            </Link>
+            <Link  href="/" className="hover:text-white">
               OPORTUNIDADES
-            </a>
-            <a href="/" className="hover:text-white">
+            </Link>
+            <Link  href="/" className="hover:text-white">
               PORTFÓLIO
-            </a>
-            <a href="/" className="hover:text-white">
+            </Link>
+            <Link  href="/" className="hover:text-white">
               FALE CONOSCO
-            </a>
+            </Link>
           </ul>
         </nav>
         <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-zinc-100 flex gap-4">
-          <a
+          <Link 
             target="_blank"
             rel="noreferrer"
             title="Fale conosco via WhatsApp"
@@ -90,8 +91,8 @@ export default function Header() {
             className="transition-colors hover:text-Primary-100"
           >
             <AiOutlineWhatsApp size="1rem" />
-          </a>
-          <a
+          </Link>
+          <Link 
             target="_blank"
             rel="noreferrer"
             title="Visite nosso Instagram"
@@ -99,8 +100,8 @@ export default function Header() {
             className="transition-colors hover:text-Primary-100"
           >
             <AiFillInstagram size="1rem" />
-          </a>
-          <a
+          </Link>
+          <Link 
             target="_blank"
             rel="noreferrer"
             title="Corretor acesse nossos empreendimentos no aplicativo Central Corretor"
@@ -108,8 +109,8 @@ export default function Header() {
             className="transition-colors hover:text-Primary-100"
           >
             <BsYoutube size="1rem" />
-          </a>
-          <a
+          </Link>
+          <Link 
             target="_blank"
             rel="noreferrer"
             title="Corretor acesse nossos empreendimentos no aplicativo Central Corretor"
@@ -117,7 +118,7 @@ export default function Header() {
             className="transition-colors hover:text-Primary-100"
           >
             <BsFacebook size="1rem" />
-          </a>
+          </Link>
         </div>
       </div>
       <header
@@ -129,13 +130,13 @@ export default function Header() {
         <nav className="w-screen p-4">
           <div className="flex justify-between items-center lg:gap-12">
             <div className=" flex justify-start">
-              <a href="/" className="mr-auto">
+              <Link  href="/" className="mr-auto">
                 <Image
                   src={Logo}
                   alt="Logo da GD & JR Empreendimentos"
                   className="w-24 ml-auto"
                 ></Image>
-              </a>
+              </Link>
             </div>
             <div
               className="text-white ml-auto mr-4 cursor-pointer lg:hidden"
@@ -146,26 +147,26 @@ export default function Header() {
             <div>
               <ul className=" justify-between items-center gap-14 hidden lg:flex ">
                 <HeaderElements.NavBarLi>
-                  <a href="/empreendimentos">EMPREENDIMENTOS</a>
+                  <Link  href="/empreendimentos">EMPREENDIMENTOS</Link>
                 </HeaderElements.NavBarLi>
                 <HeaderElements.NavBarLi>
-                  <a href="/quemsomos">SOBRE NÓS</a>
+                  <Link  href="/quemsomos">SOBRE NÓS</Link>
                 </HeaderElements.NavBarLi>
                 <HeaderElements.NavBarLi>
-                  <a href="/oportunidades">OPORTUNIDADES</a>
+                  <Link  href="/oportunidades">OPORTUNIDADES</Link>
                 </HeaderElements.NavBarLi>
                 <HeaderElements.NavBarLi>
-                  <a href="/portfolio">PORTFÓLIO</a>
+                  <Link  href="/portfolio">PORTFÓLIO</Link>
                 </HeaderElements.NavBarLi>
                 <HeaderElements.NavBarLi>
-                  <a href="/fale conosco">FALE CONOSCO</a>
+                  <Link  href="/fale conosco">FALE CONOSCO</Link>
                 </HeaderElements.NavBarLi>
               </ul>
             </div>
             <div>
               <div className="w-full hidden lg:block ">
                 <div className="w-36 float-right grid grid-flow-col">
-                  <a
+                  <Link 
                     target="_blank"
                     rel="noreferrer"
                     title="Fale conosco via WhatsApp"
@@ -173,8 +174,8 @@ export default function Header() {
                     className="transition-colors hover:text-Primary-100"
                   >
                     <AiOutlineWhatsApp size="1.4rem" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link 
                     target="_blank"
                     rel="noreferrer"
                     title="Visite nosso Instagram"
@@ -182,8 +183,8 @@ export default function Header() {
                     className="transition-colors hover:text-Primary-100"
                   >
                     <AiFillInstagram size="1.4rem" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link 
                     target="_blank"
                     rel="noreferrer"
                     title="Corretor acesse nossos empreendimentos no aplicativo Central Corretor"
@@ -191,8 +192,8 @@ export default function Header() {
                     className="transition-colors hover:text-Primary-100"
                   >
                     <BsYoutube size="1.4rem" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link 
                     target="_blank"
                     rel="noreferrer"
                     title="Corretor acesse nossos empreendimentos no aplicativo Central Corretor"
@@ -200,7 +201,7 @@ export default function Header() {
                     className="transition-colors hover:text-Primary-100"
                   >
                     <BsFacebook size="1.4rem" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

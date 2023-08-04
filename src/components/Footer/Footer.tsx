@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FooterLogo from "@/assets/svg/footer-logo.svg";
 import { Footer } from "./index";
+import Link from "next/link";
 
 export default function FooterComponent() {
   return (
@@ -15,40 +16,40 @@ export default function FooterComponent() {
               <div>
                 <Footer.NavBarTitle>EMPREENDIMENTOS</Footer.NavBarTitle>
                 <Footer.ItemsWrapper>
-                  <a
+                  <Link
                     href="/sunbeachresidence"
                     className="cursor-pointer motion-safe:animate-fadeIn"
                   >
                     Sun Beach Residence 
-                  </a>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  </Link>
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     Gran Palace Residence
-                  </a>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  </Link>
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     Beau Lac Residence
-                  </a>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  </Link>
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     Bello Bosque Residence
-                  </a>
+                  </Link>
                 </Footer.ItemsWrapper>
               </div>
               <div>
                 <Footer.NavBarTitle>MAIS CANAIS</Footer.NavBarTitle>
                 <Footer.ItemsWrapper>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     Trabalhe conosco
-                  </a>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  </Link>
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     Portal do Cliente
-                  </a>
+                  </Link>
                 </Footer.ItemsWrapper>
               </div>
               <div>
                 <Footer.NavBarTitle>FERRAMENTAS</Footer.NavBarTitle>
                 <Footer.ItemsWrapper>
-                  <a href="/sunbeachresidence" className="cursor-pointer">
+                  <Link href="/sunbeachresidence" className="cursor-pointer">
                     CUB / SC
-                  </a>
+                  </Link>
                 </Footer.ItemsWrapper>
               </div>
             </div>

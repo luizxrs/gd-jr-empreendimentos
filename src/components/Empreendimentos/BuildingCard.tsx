@@ -8,13 +8,13 @@ import Image from "next/image";
 export default function BuildingCard({ buildingInfo }: IBuildingCard) {
   return (
     <>
-      <div className=" relative group cursor-pointer">
+      <div className="w-full h-full relative group cursor-pointer">
         <div className="place-self-start w-2/5 h-12 absolute p-10">
           <Image src={buildingInfo.logoImg} alt="Logo Beach Residence "></Image>
         </div>
-        <div className="w-3/5 right-0 absolute h-full z-10 overflow-hidden">
+        <div className="w-3/5 right-0 bottom-10 h-[40vw] absolute z-10 overflow-hidden">
           <img
-            className="w-full h-full object-cover scale-[1.02] transition-all group-hover:scale-100 duration-300"
+            className=" w-full h-full object-cover scale-[1.02] transition-all group-hover:scale-100 duration-300"
             src={buildingInfo.buildingImg}
             alt=""
           />

@@ -4,14 +4,58 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import BuildingCard from "./BuildingCard";
 import buildingCards from "@/app/empreendimentos/buildings";
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import members from "@/app/quemsomos/members";
 
 export default function EmpreendimentosPage() {
+  const [dragLeftConstraint, setDragLeftConstraint] = useState(0);
+  const carousel = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (carousel.current) {
+      setDragLeftConstraint(
+        (carousel.current.scrollWidth - carousel.current.offsetWidth) * -1
+      );
+    }
+  }, []);
+
   return (
     <>
       <div className="pt-24 flex flex-col justify-center items-center w-screen bg-backgroundColor-100">
         <section className=" w-screen">
           <div className=" max-w-screen-xl m-auto">
             <SectionTitle text="Pré Lançamento" />
+
+            <div className="w-full pt-48 mb-24 relative">
+              <div className="w-[90vw] h-full">
+                <motion.div
+                  ref={carousel}
+                  className="h-full w-full overflow-hidden cursor-grab mx-auto"
+                >
+                  <motion.div
+                    drag="x"
+                    dragConstraints={{ right: 0, left: dragLeftConstraint }}
+                    className="h-full max-w-full grid grid-flow-col gap-x-20 px-6 relative"
+                  >
+                    {/* //CARROUESEL */}
+                    {buildingCards.map((buildingCard, index) => (
+                      <>
+                        <motion.div className="w-[40vw] h-[45vw] relative group">
+                          {buildingCards.map((buildingCard, index) => (
+                            <BuildingCard
+                              buildingInfo={buildingCard.buildingInfo}
+                              key={index}
+                            />
+                          ))}
+                        </motion.div>
+                      </>
+                    ))}
+                  </motion.div>
+                </motion.div>
+              </div>
+            </div>
+
             <div className=" w-full h-[600px] gap-20 grid grid-cols-2">
               {buildingCards.map((buildingCard, index) => (
                 <BuildingCard
@@ -35,6 +79,7 @@ export default function EmpreendimentosPage() {
             </div>
           </div>
         </section>
+
         <section className="w-screen m-auto overflow-hidden relative">
           <div className="py-56 flex justify-around items-center flex-col gap-4">
             <h2 className="text-5xl font-bold">
@@ -56,6 +101,7 @@ export default function EmpreendimentosPage() {
             />
           </div>
         </section>
+
         <section className="w-screen m-auto overflow-hidden">
           <div className="px-32 py-20 flex justify-around items-center gap-4 bg-Primary-300">
             <div className="flex justify-between items-center gap-20 w-full">

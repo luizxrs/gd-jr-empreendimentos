@@ -16,6 +16,7 @@ export default function BuildingCard({ buildingInfo }: IBuildingCard) {
           <Image
             src={buildingInfo.logoImg}
             alt="Logo Beach Residence "
+            className="pointer-events-none"
             objectFit="contain"
           ></Image>
         </div>

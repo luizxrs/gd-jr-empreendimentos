@@ -28,7 +28,7 @@ export default function EmpreendimentosPage() {
             <SectionTitle text="Pré Lançamento" />
 
             <div className="w-full relative">
-              <div className="w-[90vw] h-full">
+              <div className="w-[90vw] mx-auto h-full">
                 <motion.div
                   ref={carousel}
                   className="h-full w-full overflow-hidden cursor-grab mx-auto"
@@ -42,12 +42,10 @@ export default function EmpreendimentosPage() {
                     {buildingCards.map((buildingCard, index) => (
                       <>
                         <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
-                          {buildingCards.map((buildingCard, index) => (
-                            <BuildingCard
-                              buildingInfo={buildingCard.buildingInfo}
-                              key={index}
-                            />
-                          ))}
+                          <BuildingCard
+                            buildingInfo={buildingCard.buildingInfo}
+                            key={index}
+                          />
                         </motion.div>
                       </>
                     ))}
@@ -55,15 +53,14 @@ export default function EmpreendimentosPage() {
                 </motion.div>
               </div>
             </div>
-
           </div>
         </section>
         <section className="w-screen mb-24">
           <div className=" max-w-screen-xl m-auto">
             <SectionTitle text="EM CONSTRUÇÃO" />
-            
+
             <div className="w-full relative">
-              <div className="w-[90vw] h-full">
+              <div className="w-[90vw] mx-auto h-full">
                 <motion.div
                   ref={carousel}
                   className="h-full w-full overflow-hidden cursor-grab mx-auto"
@@ -77,12 +74,10 @@ export default function EmpreendimentosPage() {
                     {buildingCards.map((buildingCard, index) => (
                       <>
                         <motion.div className="w-64 md:w-[40vw] h-[28rem] md:h-[50vw] relative group">
-                          {buildingCards.map((buildingCard, index) => (
-                            <BuildingCard
-                              buildingInfo={buildingCard.buildingInfo}
-                              key={index}
-                            />
-                          ))}
+                          <BuildingCard
+                            buildingInfo={buildingCard.buildingInfo}
+                            key={index}
+                          />
                         </motion.div>
                       </>
                     ))}

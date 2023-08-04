@@ -11,6 +11,7 @@ import OutlineTitle from "./OutlineTitle";
 import ImageStack from "./ImageStack";
 import AnimatedText from "./AnimatedText";
 
+
 export default function QuemSomosPage() {
   const [dragLeftConstraint, setDragLeftConstraint] = useState(0);
   const carousel = useRef<HTMLDivElement>(null);

@@ -9,6 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose } from "react-icons/gr";
 import { AiOutlineWhatsApp, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook, BsYoutube } from "react-icons/bs";
+import { useEffect } from "react";
 
 export default function Header() {
   const [fix, setFix] = useState(false);
@@ -21,8 +22,13 @@ export default function Header() {
       setFix(false);
     }
   };
-
-  window?.addEventListener("scroll", setFixed);
+  
+  useEffect(() => {
+    window.addEventListener("scroll", setFixed);
+    return () => {
+      window.removeEventListener("scroll", setFixed);
+    };
+  }, []);
 
   return (
     <>

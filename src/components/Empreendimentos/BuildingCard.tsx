@@ -13,10 +13,11 @@ export default function BuildingCard({ buildingInfo }: IBuildingCard) {
           <Image src={buildingInfo.logoImg} alt="Logo Beach Residence "></Image>
         </div>
         <div className="w-3/5 right-0 bottom-10 h-[40vw] absolute z-10 overflow-hidden">
-          <img
-            className=" w-full h-full object-cover scale-[1.02] transition-all group-hover:scale-100 duration-300"
+          <Image
+            className=" w-full h-full object-cover scale-[1.02] transition-all pointer-events-none group-hover:scale-100 duration-300"
             src={buildingInfo.buildingImg}
             alt=""
+            fill 
           />
         </div>
         <div className="w-full h-4/6 bg-zinc-950 p-6 transition-all duration-300 -bottom-4 right-4 absolute flex flex-col justify-between items-start group-hover:right-3 group-hover:bg-zinc-900">

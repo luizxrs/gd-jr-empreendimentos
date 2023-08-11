@@ -28,7 +28,7 @@ export default function Home() {
           >
             PÁGINA
             <br />
-            <motion.span className="text-Primary-100">NÃO </motion.span> <br />
+            <motion.span className="text-Primary-100">NÃO</motion.span> <br />
             ENCONTRADA
           </motion.h1>
           <motion.h1 className="text-6xl md:text-[10rem] font-bold pointer-events-none absolute font-outline-1 text-transparent">

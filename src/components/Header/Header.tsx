@@ -159,7 +159,7 @@ export default function Header() {
                   <Link  href="/portfolio">PORTFÓLIO</Link>
                 </HeaderElements.NavBarLi>
                 <HeaderElements.NavBarLi>
-                  <Link  href="/fale conosco">FALE CONOSCO</Link>
+                  <Link  href="/faleconosco">FALE CONOSCO</Link>
                 </HeaderElements.NavBarLi>
               </ul>
             </div>
